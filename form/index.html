@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- HTML5 Audio, video, youtube video, embed iframe -->
+      <div>
+        <p>1. Audio Tag</p>
+        <audio src="jump-into-the-water.wav" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div>
+        <p>2. Video Tag</p>
+        <video src="Sheep - 57647.mp4" height="200px" width="300px" controls>
+          Your browser does not support the video tag
+        </video>
+      </div>
+
+      <div>
+        <p>3. Emmbeded</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/uwAqEzhyjtw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div>
+        <p>4. Using Semantic tag</p>
+      </div>
+
+      <div>
+        <p>Make Table Using HTML</p>
+        <table style="text-align: center; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th colspan="3">Web Dev</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Days</td>
+              <td>Day</td>
+              <td>Night</td>
+            </tr>
+            <tr>
+              <td>Sun</td>
+              <td>2pm to 4pm</td>
+              <td>Night 1 hour</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- another table -->
+        <table style="text-align: center; border-collapse: collapse">
+          <thead>
+            <th>Month</th>
+            <th>Savings</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jan</td>
+              <td>100$</td>
+            </tr>
+            <tr>
+              <td>Feb</td>
+              <td>100$</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>200$</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- form  -->
+      <div>
+        <form action="#" method="post">
+          User Name:<input type="text" /> <br />
+          Password:<input type="password" /> <br />
+          <fieldset>
+            <legend>Personal Info</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" /> <br />
+            <br />
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" /> <br />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" /> <br />
+            <br />
+            <label for="birth">Birthday:</label>
+            <input type="date" name="birth" id="birth" />
+            <br />
+            <br />
+            <label> <input type="checkbox" /> I agree to the terms </label>
+            <br />
+            <br />
+            <p>Radio buttons</p>
+            <label>Marital status</label>
+            <label>
+              <input type="radio" name="status" />
+              Single
+            </label>
+            <label>
+              <input type="radio" name="status" />
+              Married
+            </label>
+            <label>
+              <input type="radio" name="status" />
+              Divorced
+            </label>
+            <label>
+              <input type="radio" name="status" />
+              Widowed
+            </label>
+            <br />
+            <br />
+            <p>Dropdown menus</p>
+            <select>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <br />
+            <br />
+            <p>Multiple choice dropdown menus</p>
+            <label for="">Your Favroutite Browser</label>
+            <select multiple name="" id="">
+              <option value="">Google</option>
+              <option value="">Firefox</option>
+              <option value="">Safari</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <form action="/signup" method="POST">
+        <p>
+          <label>Title</label>
+          <label>
+            <input type="radio" name="title" value="mr" />
+            Mr
+          </label>
+          <label>
+            <input type="radio" name="title" value="mrs" />
+            Mrs
+          </label>
+          <label>
+            <input type="radio" name="title" value="miss" />
+            Miss
+          </label>
+        </p>
+        <p>
+          <label>First name</label>
+          <input type="text" value="first_name" />
+        </p>
+        <p>
+          <label>Last name</label>
+          <input type="text" value="last_name" />
+        </p>
+        <p>
+          <label>Email</label>
+          <input type="email" value="email" />
+        </p>
+        <p>
+          <label>Phone number</label>
+          <input type="tel" value="phone" />
+        </p>
+        <p>
+          <label>Password</label>
+          <input type="password" value="password" />
+        </p>
+        <p>
+          <label>Confirm your password</label>
+          <input type="password" value="password_confirm" />
+        </p>
+        <p>
+          <label>Country</label>
+          <select>
+            <option>Canada</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Italy</option>
+            <option>Japan</option>
+            <option>Russia</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+          </select>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" value="terms" />
+            I agree to the <a href="/terms">terms and conditions</a>
+          </label>
+        </p>
+        <p>
+          <button>Sign up</button>
+        </p>
+      </form>
+    </footer>
+  </body>
+</html>
